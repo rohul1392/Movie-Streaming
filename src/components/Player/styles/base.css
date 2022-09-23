@@ -1,0 +1,122 @@
+.vjs-button > .vjs-icon-placeholder:before {
+  font-size: 24px;
+}
+
+:focus {
+  outline: none;
+}
+
+.video-js.bongo-theater-mode {
+  position: initial;
+}
+
+.video-js.bongo-theater-mode.live-tv-dimensions.vjs-fluid {
+  padding-top: initial;
+}
+
+.video-js.bongo-theater-mode .ima-ad-container {
+  height: 61vh;
+}
+
+.video-js.bongo-theater-mode .ima-ad-container > div:first-child {
+  /* inline style so had to use !important :'( */
+  height: 61vh !important;
+}
+
+.re_design .vjs-control-bar.bongo-control-bar {
+  /* grid-template-columns: 50px repeat(3, 24px) auto repeat(5, 24px); */
+  /* grid-template-columns: repeat(2, 44px) repeat(2, 24px) auto repeat(5, 24px); */
+  /* grid-template-columns: 100px repeat(3, 24px) auto repeat(5, 24px); */
+  grid-template-columns:
+    fit-content(120px) 24px repeat(2, auto) auto repeat(3, auto)
+    repeat(2, 24px);
+  grid-template-areas:
+    '. . . . . . . . mcb0 mcb1'
+    'pa pa pa pa pa pa pa pa pa pa'
+    'sb sb sb sb sb sb sb sb sb sb'
+    'cbl0 cbl1 cbl2 cbl3 . cbr0 cbr1 cbr2 cbr3 cbr4';
+}
+.re_design .bongo-settings_button {
+  grid-area: cbr3;
+}
+
+.re_design .vjs-volume-panel.vjs-control.bongo-volume-panel {
+  grid-area: cbl1;
+  margin-left: -10px;
+}
+
+.re_design
+  .vjs-fullscreen-control.bongo-full-screen-toggle
+  .vjs-icon-placeholder::before {
+  font-size: 0;
+  background: url(/assets/playerIcons/fullScreen.svg) center center no-repeat;
+  background-size: 22px;
+  background-position-y: 7px;
+}
+
+.re_design .bongo-settings_button .vjs-icon-placeholder::before {
+  font-size: 0;
+  background: url(/assets/playerIcons/settings.svg) center center no-repeat;
+  background-size: 22px;
+  background-position-y: 7px;
+}
+
+.re_design
+  .vjs-fullscreen-control.bongo-full-screen-toggle
+  .vjs-icon-placeholder::before {
+  font-size: 0;
+  background: url(/assets/playerIcons/fullScreen.svg) center center no-repeat;
+  background-size: 22px;
+  background-position-y: 7px;
+}
+
+.re_design .vjs-big-play-button.bongo-big-play-button {
+  width: 85px;
+  height: 85px;
+  border: 4px solid white;
+  border-radius: 50%;
+  line-height: 85px;
+  background-color: rgba(33, 33, 33, 0.6) !important;
+  margin: 0 !important;
+  transform: translate(-50%, -50%);
+}
+
+.re_design.video-js
+  .vjs-big-play-button.bongo-big-play-button
+  .vjs-icon-placeholder:before {
+  font-size: 48px;
+  margin-top: -3px;
+}
+
+.re_design.vjs-fullscreen.vjs-playing .bongo-big-play-button {
+  opacity: 0;
+}
+
+.re_design .bongo-remaining-time-display {
+  grid-area: cbl1;
+}
+
+/* .re_design .vjs-duration {
+  display: initial !important;
+  grid-area: cbl0;
+} */
+
+.re_design .duration_with_remainning_time {
+  grid-area: cbl0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 8px;
+  padding-left: 5px;
+}
+
+.re_design
+  .duration_with_remainning_time
+  .vjs-remaining-time
+  span:nth-child(2) {
+  margin: 0px 6px;
+}
+
+.duration_with_remainning_time span {
+  font-size: 12px;
+}

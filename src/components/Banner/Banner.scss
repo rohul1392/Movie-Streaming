@@ -1,0 +1,17 @@
+@import "../../common/colors.scss";
+.banner-item {
+  background: $secondary-color;
+  cursor: pointer;
+  height: 100%;
+  margin: 10px;
+}
+
+.banner-top {
+  height: 500px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
